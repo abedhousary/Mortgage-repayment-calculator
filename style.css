@@ -1,0 +1,370 @@
+:root {
+--Lime: hsl(61, 70%, 52%)           ;
+--Red: hsl(4, 69%, 50%);
+--White: hsl(0, 0%, 100%);
+--Slate-100: hsl(202, 86%, 94%);
+--Slate-300: hsl(203, 41%, 72%);
+--Slate-500: hsl(200, 26%, 54%);
+--Slate-700: hsl(200, 24%, 40%);
+--Slate-900: hsl(202, 55%, 16%);
+}
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Slate-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 60%;
+    height: 600px;
+    background-color: var(--White);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-con {
+    width: 50%;
+    height: 100%;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.right-con {
+    width: 50%;
+    height: 100%;
+    overflow:hidden;
+}
+
+.left-con .top-con {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.top-con .title {
+    font-weight: bold;
+    font-size: 21px;
+    color: var(--Slate-900);
+}
+.top-con .clearall {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--Slate-500);
+    text-decoration: underline;
+    position: absolute;
+    right: 0;
+}
+.left-con .form-input {
+    width: 80%;
+    /* height: 100px; */
+    /* background-color: black;    */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.form-input .title-con {
+    width: 100%;
+    height: 15%;
+    /* background-color: blanchedalmond; */
+}
+
+.title-con .title {
+    color: var(--Slate-500);
+    font-weight: 500;
+}
+.form-input .input-con {
+    width: 100%;
+    height:35%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    /* background-color: red; */
+}
+.input-con .input-symbol {
+    width: 40px;
+    height: 48px;
+    background-color: var(--Slate-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Slate-500);
+    font-weight: bold;
+    position: absolute;
+    border-radius: 5px 0px 0px 5px;
+    top: 1px;
+    left: 1px;
+}
+.form-input .amminput {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--Slate-500);
+    padding-left: 50px;
+    color: var(--Slate-900);
+    font-weight: bold;
+    font-size: 21px;
+}
+.form-input .amminput:focus{
+    border: 1px solid var(--Lime);
+    cursor: pointer;
+}
+.active-input   {
+    background-color: var(--Lime) !important;
+    color: var(--Slate-900) !important;
+    font-weight: bold !important;
+ 
+}
+.left-con .form-two-inputs {
+    width: 80%;
+    /* height: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.form-two-inputs .two-form-input {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100px;
+    gap: 14px;
+
+}
+.form-two-inputs .input-con-sm {
+    width: 90%;
+    height:35%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+.input-con-sm .input-symbol-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Slate-100);
+    color: var(--Slate-500);
+    font-weight: bold;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 60px;
+    height: 48px;
+    border-radius: 0px 5px 5px 0px;
+ 
+}
+.input-con-sm .input-sm  {
+     width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--Slate-500);
+    color: var(--Slate-900);
+    font-weight: bold;
+    font-size: 21px;
+    padding-left: 20px;
+
+}
+.input-con-sm .input-sm:focus{
+    border: 1px solid var(--Lime);
+    cursor: pointer;
+}
+.go-to-end{
+    align-items: self-end;
+}
+.radio-con {
+    width: 80%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.radio-holder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.radio-cont {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    border: 1px solid var(--Slate-900);
+    border-radius: 5px;
+    color: var(--Slate-900);
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+.button-con {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.button {
+    height: 50px;
+    width: 60%;
+    color: var(--Slate-900);
+    font-weight: bold;
+    font-size: 18px;
+    background-color: var(--Lime);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.right-con{
+    width: 50%;
+    height: 100%;
+    background-color: var(--Slate-900);
+    border-radius: 0px 0px 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.right-con .con-title {
+    color: var(--White);
+    font-size: 24px;
+    font-weight: 500;
+}
+.right-con .con-desc {
+    color: var(--Slate-300);
+    font-weight: 500;
+    text-align: center;
+    width: 420px;
+    line-height: 24px;
+}
+.empty {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* display: none; */
+}
+.result-con {
+
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    display: none;
+}
+.result-title {
+      color: var(--White);
+    font-size: 24px;
+    font-weight: 500;
+}
+.result-desc {
+    color: var(--Slate-300);
+    width: 420px;
+    line-height: 24px;
+}
+.result-holder {
+    width: 100%;
+    height: 300px;
+    background-color: hsl(202.29deg 55.56% 12.35%);
+    border-radius: 10px;
+    box-shadow: 0px -5px 0px 0px var(--Lime);
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inner-con {
+    width: 85%;
+    height: 85%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.holder-title {
+    color: var(--Slate-300);
+    /* margin: 40px 20px; */
+}
+.holder-price {
+    color: var(--Lime);
+    font-weight: bold;
+    font-size: 51px;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid var(--Slate-300);
+}
+.holder-sm-title {
+    color: var(--Slate-300);
+    margin-top: 20px;
+}
+.holder-sm-price {
+    color: var(--White);
+    font-weight: bold;
+    font-size: 29px;
+}
+
+.acitveradio {
+    background-color: hsl(60deg 72.22% 92.94%);
+    border: 1px solid var(--Lime);
+}
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--Slate-900);
+    border-radius: 50%;
+    position: relative;
+}
+
+.acitveradio  input[type="radio"]:checked::before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: var(--Lime);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.acitveradio  input[type="radio"]:checked{
+   appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--Lime);
+    border-radius: 50%;
+    position: relative;
+
+}
+

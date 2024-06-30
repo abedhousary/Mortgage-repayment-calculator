@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-con">
+        <div class="top-con">
+          <div class="title">Mortgage Calculator</div>
+          <div class="clearall">Clear All</div>
+        </div>
+        <div class="form-input">
+          <div class="title-con">
+            <div class="title">Mortgage Amount</div>
+          </div>
+          <div class="input-con">
+            <div class="input-symbol" id="mortageamm">£</div>
+            <input type="text" class="amminput" />
+          </div>
+        </div>
+        <div class="form-two-inputs">
+          <div class="two-form-input">
+            <div class="title-con">
+              <div class="title">Mortgage Term</div>
+            </div>
+            <div class="input-con-sm">
+              <div class="input-symbol-sm" id="yearssym">years</div>
+              <input type="text" class="input-sm amminput" id="years" />
+            </div>
+          </div>
+          <div class="two-form-input go-to-end">
+            <div class="title-con" style="width: 90%">
+              <div class="title">Interest Rate</div>
+            </div>
+            <div class="input-con-sm">
+              <div class="input-symbol-sm" id="Interestratesym">%</div>
+              <input type="text" class="input-sm amminput" id="Interestrate"/>
+            </div>
+          </div>
+        </div>
+        <div class="radio-con">
+          <div class="title-con">
+            <div class="title">Mortgage Type</div>
+          </div>
+          <div class="radio-holder">
+            <div class="radio-cont">
+              <input type="radio" name="" id="" />
+              <div class="radio-title">Repayment</div>
+            </div>
+            <div class="radio-cont">
+              <input type="radio" name="" id="" />
+              <div class="radio-title">Interest Only</div>
+            </div>
+          </div>
+        </div>
+        <div class="button-con">
+          <div class="button">
+            <img src="./assets/images/icon-calculator.svg" />Calculate
+            Repayments
+          </div>
+        </div>
+      </div>
+      <div class="right-con">
+        <div class="empty">
+          <img src="./assets/images/illustration-empty.svg" alt="" srcset="" />
+          <div class="con-title">Results shown here</div>
+          <div class="con-desc">
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </div>
+        </div>
+        <div class="result-con">
+          <div class="result-title">Your results</div>
+          <div class="result-desc">
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click “calculate
+            repayments” again.
+          </div>
+          <div class="result-holder">
+            <div class="inner-con">
+              <div class="holder-title">Your monthly repayments</div>
+              <div class="holder-price" id = "result">$123456789</div>
+              <div class="holder-sm-title">Total you'll repay over the term</div>
+              <div class="holder-sm-price" id = "repay">$12346578</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+
+ 
+
+
+   -->
+
+    <!-- Completed results end -->
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="main.js"></script>
+  </body>
+</html>
